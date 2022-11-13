@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+        section {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Righteous", cursive;
+            min-height: 100vh;
+            background-color: #a9c9ff;
+            background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+        }
+
+        .container1 {
+            max-width: 100vw;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 35px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        .card1 {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            margin: 0 auto;
+            background: #000;
+            border-radius: 15px;
+            box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .face {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .face1 {
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        h2 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .java {
+            background-color: #fffc00;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .python {
+            background-color: #00fffc;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .cSharp {
+            background-color: #fc00ff;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+
+        .face2 {
+            transition: 0.5s;
+        }
+
+        h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 1.5rem;
+            color: black;
+            transition: 0.5s;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+
+
+        .card1:hover .face.face2 {
+            height: 60px;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+
+
+        .card1:nth-child(1) .face.face2,
+        .card1:nth-child(2) .face.face2,
+        .card1:nth-child(3) .face.face2,
+        .card1:nth-child(3) .face.face2,
+        .card1:nth-child(4) .face.face2,
+        .card1:nth-child(5) .face.face2,
+        .card1:nth-child(6) .face.face2,
+        .card1:nth-child(7) .face.face2,
+        .card1:nth-child(8) .face.face2 {
+            background-image: linear-gradient(40deg,
+                    #fff 0%,
+                    #fff 45%,
+                    #fff 100%);
+            border-radius: 15px;
+        }
+
+        @media only screen and (min-width: 991px) and (max-width: 1200px) {
+            section {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: "Righteous", cursive;
+                min-height: 100vh;
+                background-color: #a9c9ff;
+                background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+            }
+
+            .container1 {
+                max-width: 100vw;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                grid-gap: 35px;
+                margin: 0 auto;
+                padding: 40px 0;
+            }
+
+            .card1 {
+                position: relative;
+                width: 300px;
+                height: 400px;
+                margin: 0 auto;
+                background: #000;
+                border-radius: 15px;
+                box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+            }
+
+            .face {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .face1 {
+                box-sizing: border-box;
+                padding: 20px;
+            }
+
+            h2 {
+                margin: 0;
+                padding: 0;
+            }
+
+            .java {
+                background-color: #fffc00;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .python {
+                background-color: #00fffc;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .cSharp {
+                background-color: #fc00ff;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+
+            .face2 {
+                transition: 0.5s;
+            }
+
+            h2 {
+                margin: 0;
+                padding: 0;
+                font-size: 1.5rem;
+                color: black;
+                transition: 0.5s;
+                text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                z-index: 10;
+            }
+
+            .card1:nth-child(1) .face.face2,
+            .card1:nth-child(2) .face.face2,
+            .card1:nth-child(3) .face.face2,
+            .card1:nth-child(3) .face.face2,
+            .card1:nth-child(4) .face.face2,
+            .card1:nth-child(5) .face.face2,
+            .card1:nth-child(6) .face.face2,
+            .card1:nth-child(7) .face.face2,
+            .card1:nth-child(8) .face.face2 {
+                background-image: linear-gradient(40deg,
+                        #fff 0%,
+                        #fff 45%,
+                        #fff 100%);
+                border-radius: 15px;
+            }
+
+            .card1:hover .face.face2 {
+                height: 60px;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            section {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: "Righteous", cursive;
+                min-height: 100vh;
+                background-color: #a9c9ff;
+                background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+            }
+
+            .container1 {
+                max-width: 100vw;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                grid-gap: 35px;
+                margin: 0 auto;
+                padding: 40px 0;
+            }
+
+            .card1 {
+                position: relative;
+                width: 300px;
+                height: 400px;
+                margin: 0 auto;
+                background: #000;
+                border-radius: 15px;
+                box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+            }
+
+            .face {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .face1 {
+                box-sizing: border-box;
+                padding: 20px;
+            }
+
+            h2 {
+                margin: 0;
+                padding: 0;
+            }
+
+            .java {
+                background-color: #fffc00;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .python {
+                background-color: #00fffc;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .cSharp {
+                background-color: #fc00ff;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+
+            .face2 {
+                transition: 0.5s;
+            }
+
+            h2 {
+                margin: 0;
+                padding: 0;
+                font-size: 1.5rem;
+                color: black;
+                transition: 0.5s;
+                text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                z-index: 10;
+            }
+
+
+            .card1:hover .face.face2 {
+                height: 60px;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+
+            .card1:nth-child(1) .face.face2,
+            .card1:nth-child(2) .face.face2,
+            .card1:nth-child(3) .face.face2,
+            .card1:nth-child(3) .face.face2,
+            .card1:nth-child(4) .face.face2,
+            .card1:nth-child(5) .face.face2,
+            .card1:nth-child(6) .face.face2,
+            .card1:nth-child(7) .face.face2,
+            .card1:nth-child(8) .face.face2 {
+                background-image: linear-gradient(40deg,
+                        #fff 0%,
+                        #fff 45%,
+                        #fff 100%);
+                border-radius: 15px;
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            section {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: "Righteous", cursive;
+                min-height: 100vh;
+                background-color: #a9c9ff;
+                background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+            }
+
+            .container1 {
+                max-width: 100vw;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                grid-gap: 35px;
+                margin: 0 auto;
+                padding: 40px 0;
+            }
+
+            .card1 {
+                position: relative;
+                width: 300px;
+                height: 400px;
+                margin: 0 auto;
+                background: #000;
+                border-radius: 15px;
+                box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+            }
+
+            .face {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .face1 {
+                box-sizing: border-box;
+                padding: 20px;
+            }
+
+            h2 {
+                margin: 0;
+                padding: 0;
+            }
+
+            .java {
+                background-color: #fffc00;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .python {
+                background-color: #00fffc;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .cSharp {
+                background-color: #fc00ff;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+
+            .face2 {
+                transition: 0.5s;
+            }
+
+            h2 {
+                margin: 0;
+                padding: 0;
+                font-size: 1.5rem;
+                color: black;
+                transition: 0.5s;
+                text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                z-index: 10;
+            }
+
+
+            .card1:hover .face.face2 {
+                height: 60px;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+
+            .card1:nth-child(1) .face.face2,
+            .card1:nth-child(2) .face.face2,
+            .card1:nth-child(3) .face.face2,
+            .card1:nth-child(3) .face.face2,
+            .card1:nth-child(4) .face.face2,
+            .card1:nth-child(5) .face.face2,
+            .card1:nth-child(6) .face.face2,
+            .card1:nth-child(7) .face.face2,
+            .card1:nth-child(8) .face.face2 {
+                background-image: linear-gradient(40deg,
+                        #fff 0%,
+                        #fff 45%,
+                        #fff 100%);
+                border-radius: 15px;
+            }
+        }
+
+        body {
+            background: #fff;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .pricingTable {
+            text-align: center;
+            background: #fff;
+            margin: 0 -15px;
+            box-shadow: 0 0 10px #ababab;
+            padding-bottom: 40px;
+            border-radius: 10px;
+            color: #cad0de;
+            transform: scale(1);
+            transition: all .5s ease 0s
+        }
+
+        .pricingTable:hover {
+            transform: scale(1.05);
+            z-index: 1
+        }
+
+        .pricingTable .pricingTable-header {
+            padding: 40px 0;
+            background: #f5f6f9;
+            border-radius: 10px 10px 50% 50%;
+            transition: all .5s ease 0s
+        }
+
+        .pricingTable:hover .pricingTable-header {
+            background: #ff9624
+        }
+
+        .pricingTable .pricingTable-header i {
+            font-size: 50px;
+            color: #858c9a;
+            margin-bottom: 10px;
+            transition: all .5s ease 0s
+        }
+
+        .pricingTable .price-value {
+            font-size: 35px;
+            color: #ff9624;
+            transition: all .5s ease 0s
+        }
+
+        .pricingTable .month {
+            display: block;
+            font-size: 14px;
+            color: #cad0de
+        }
+
+        .pricingTable:hover .month,
+        .pricingTable:hover .price-value,
+        .pricingTable:hover .pricingTable-header i {
+            color: #fff
+        }
+
+        .pricingTable .heading {
+            font-size: 24px;
+            color: #ff9624;
+            margin-bottom: 20px;
+            text-transform: uppercase
+        }
+
+        .pricingTable .pricing-content ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px
+        }
+
+        .pricingTable .pricing-content ul li {
+            line-height: 30px;
+            color: #a7a8aa
+        }
+
+        .pricingTable .pricingTable-signup a {
+            display: inline-block;
+            font-size: 15px;
+            color: #fff;
+            padding: 10px 35px;
+            border-radius: 20px;
+            background: #ffa442;
+            text-transform: uppercase;
+            transition: all .3s ease 0s
+        }
+
+        .pricingTable .pricingTable-signup a:hover {
+            box-shadow: 0 0 10px #ffa442
+        }
+
+        .pricingTable.blue .heading,
+        .pricingTable.blue .price-value {
+            color: #4b64ff
+        }
+
+        .pricingTable.blue .pricingTable-signup a,
+        .pricingTable.blue:hover .pricingTable-header {
+            background: #4b64ff
+        }
+
+        .pricingTable.blue .pricingTable-signup a:hover {
+            box-shadow: 0 0 10px #4b64ff
+        }
+
+        .pricingTable.red .heading,
+        .pricingTable.red .price-value {
+            color: #ff4b4b
+        }
+
+        .pricingTable.red .pricingTable-signup a,
+        .pricingTable.red:hover .pricingTable-header {
+            background: #ff4b4b
+        }
+
+        .pricingTable.red .pricingTable-signup a:hover {
+            box-shadow: 0 0 10px #ff4b4b
+        }
+
+        .pricingTable.green .heading,
+        .pricingTable.green .price-value {
+            color: #40c952
+        }
+
+        .pricingTable.green .pricingTable-signup a,
+        .pricingTable.green:hover .pricingTable-header {
+            background: #40c952
+        }
+
+        .pricingTable.green .pricingTable-signup a:hover {
+            box-shadow: 0 0 10px #40c952
+        }
+
+        .pricingTable.blue:hover .price-value,
+        .pricingTable.green:hover .price-value,
+        .pricingTable.red:hover .price-value {
+            color: #fff
+        }
+
+        @media screen and (max-width:990px) {
+            .pricingTable {
+                margin: 0 0 20px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../favicon.ico" alt="">
+                <span class="text-warning">Phoenix</span>Club
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/programs.html">Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/ourteam.html">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/contract.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/image16.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption bottom-14">
+                        <h1>PHOENIX FITNESS CLUB</h1>
+                        <p>
+                        <h2 style="color: #fff;">PROGRAM</h2>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="demo">
+            <div class="container mb-7">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header text-center pb-5">
+                            <br><br><br>
+                            <h4><span>Program </span>Offered</h4>
+                        </div>
+                    </div>
+                    <div class="container1">
+
+                        <div class="card1">
+                            <div class="face face1">
+                                <div class="content">
+                                    <span class="stars"></span>
+                                    <h2 style="font-size: 1.5rem;">Cardio Training</h2>
+                                    <p class="java">Cardio is also one area of exercise that offers limitless kinds of
+                                        workouts: walking, running, cycling, cross-country skiing, swimming, dancing.
+                                        Exercises and movements that require short bursts of intense energy like
+                                        weightlifting, jumping or jumping rope, sprinting, high-intensity interval
+                                        training,
+                                        biking. </p>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <h2 style="font-size: 1.5rem;">Cardio Training</h2>
+                            </div>
+                        </div>
+                        <div class="card1">
+                            <div class="face face1">
+                                <div class="content">
+                                    <span class="stars"></span>
+                                    <p class="java" style="font-size: 0.9rem;">There are many goals you achieve through
+                                        resistance training with weights in the form rep and set schemes along with the
+                                        percentages of your 1Rm (1 rep max) that you are lifting.
+
+                                        Hypertrophy: Enlargement muscles by increasing size of cells in muscle fiber.
+                                        Muscular endurance: Ability of muscles to exert tension over a long period of
+                                        time.
+                                        Muscular strength: The amount of force a muscle exerts in a single maximum
+                                        effort.
+                                        Cardio training: Using weights or resistance to work your aerobic energy systems
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <h2 style="font-size: 1.5rem;">Weight Training</h2>
+                            </div>
+                        </div>
+
+                        <div class="card1">
+                            <div class="face face1">
+                                <div class="content" style="word-wrap: break-word ;">
+                                    <span class="stars"></span>
+                                    <p class="java" style="font-size: 0.9rem;">Flexibility is more than being able to
+                                        touch
+                                        your toes, it’s about general musculoskeletal health. Exercises that facilitate
+                                        flexibility and mobility, like stretching are often neglected or deemed as ‘not
+                                        proper’ exercise, as exertion seems minimal at first glance. Disregarding this
+                                        kind
+                                        of training from your regular routine is actually doing you a disservice as
+                                        compromised mobility can limit your range of motion, and stunt your fitness
+                                        goals,
+                                        or in the worst case can lead to injury down the line. </p>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <h2 style="font-size: 1.5rem;">Flexibility Training</h2>
+                            </div>
+                        </div>
+                        <div class="card1">
+                            <div class="face face1">
+                                <div class="content">
+                                    <span class="stars"></span>
+                                    <p class="java">Every stretch can be either static or dynamic and passive or active.
+                                        Dynamic and active stretches are more helpful for improving functional movements
+                                        used in everyday life and sports. </p>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <h2 style="font-size: 1.5rem;">Stretching</h2>
+                            </div>
+                        </div>
+                        <div class="card1">
+                            <div class="face face1">
+                                <div class="content">
+                                    <span class="stars"></span>
+                                    <p class="java">Meassage and Steam will help to recover from muscle strains or
+                                        injuries
+                                        in case there is any. </p>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <h2 style="font-size: 1.5rem;">Massage and Steam</h2>
+                            </div>
+                        </div>
+                        <div class="card1">
+                            <div class="face face1">
+                                <div class="content">
+                                    <p class="java">A proper diet is needed to maintain in reccomendation of a
+                                        Nutritionist
+                                        to get the best result to achieve your goal out of your exercise and staying
+                                        healthy. </p>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <h2 style="font-size: 1.5rem;">Nutritional Counseling </h2>
+                            </div>
+                        </div>
+                        <div class="card1">
+                            <div class="face face1">
+                                <div class="content">
+                                    <span class="stars"></span>
+                                    <p class="java">These days yoga boasts as many styles of the practice as there are
+                                        ranges of activewear brands. Hatha, Ashtanga, Iyengar, hot yoga, vinyasa flow,
+                                        Kundalini and yin are a few of the most commonly known ones.</p>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <h2 style="font-size: 1.5rem;">Yoga</h2>
+                            </div>
+                        </div>
+                        <div class="card1">
+                            <div class="face face1">
+                                <div class="content">
+                                    <span class="stars"></span>
+                                    <p class="java" style="font-size: 0.9rem;">With a whole fitness industry built on
+                                        goal-oriented workouts tailored to individuals looking to lose weight, get
+                                        healthy
+                                        or lean — the simple act of playing a sport can often be overlooked. As a
+                                        genuinely
+                                        holistic and above all fun form of exercise, sports can go a long way in
+                                        motivating
+                                        and keeping you physically active, especially later in life. Team sports like
+                                        hockey, basketball and soccer are amazing outlets that balance quality
+                                        high-intensity training while throwing a ton of fun and a social element into
+                                        the
+                                        mix.</p>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <h2 style="font-size: 1.5rem;">Sports</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <br> <br>
+                    <div class="col-md-12">
+                        <div class="section-header text-center pb-5">
+                            <h4>Packages</h4>
+                        </div>
+                    </div>
+                    <!-- card 1 -->
+                    <div class="col-md-6 col-sm-6 col-lg-3">
+                        <div class="pricingTable h-100">
+                            <div class="pricingTable-header">
+                                <i class="fa fa-adjust"></i>
+                                <div class="price-value">₹ 1999.00<span class="month">per month</span> </div>
+                            </div>
+                            <h3 class="heading">Bronze</h3>
+                            <div class="pricing-content">
+                                <ul>
+                                    <li><b>3</b> Programs Accessible</li>
+                                    <li><b>3 Month</b> Package Duration</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- card-2 -->
+                    <div class="col-md-6 col-sm-6 col-lg-3">
+                        <div class="pricingTable green h-100">
+                            <div class="pricingTable-header">
+                                <i class="fa fa-adjust"></i>
+                                <div class="price-value">₹ 3699.00<span class="month">per month</span> </div>
+                            </div>
+                            <h3 class="heading">Silver</h3>
+                            <div class="pricing-content">
+                                <ul>
+                                    <li><b>5</b> Programs Accessible</li>
+                                    <li><b>3 Month</b> Package Duration</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- card-3 -->
+                    <div class="col-md-6 col-sm-6 col-lg-3">
+                        <div class="pricingTable blue h-100">
+                            <div class="pricingTable-header">
+                                <i class="fa fa-adjust"></i>
+                                <div class="price-value">₹ 4999.00<span class="month">per month</span> </div>
+                            </div>
+                            <h3 class="heading">Gold</h3>
+                            <div class="pricing-content">
+                                <ul>
+                                    <li><b>All 10</b> Programs Accessible</li>
+                                    <li><b>3 Month</b> Package Duration</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="col-md-6 col-sm-6 col-lg-3">
+                        <div class="pricingTable red h-100">
+                            <div class="pricingTable-header">
+                                <i class="fa fa-adjust"></i>
+                                <div class="price-value">₹ 5199.00<span class="month">per month</span> </div>
+                            </div>
+                            <h3 class="heading">Premium Bronze</h3>
+                            <div class="pricing-content">
+                                <ul>
+                                    <li><b>3</b> Programs Accessible</li>
+                                    <li><b>6 Month</b> Package Duration</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 5 -->
+                    <div class="col-md-6 col-sm-6 col-lg-3">
+                        <div class="pricingTable red h-100">
+                            <div class="pricingTable-header">
+                                <i class="fa fa-adjust"></i>
+                                <div class="price-value">₹ 6699.00<span class="month">per month</span> </div>
+                            </div>
+                            <h3 class="heading">Premium Silver</h3>
+                            <div class="pricing-content">
+                                <ul>
+                                    <li><b>5</b> Programs Accessible</li>
+                                    <li><b>6 Month</b> Package Duration</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 6 -->
+                    <div class="col-md-6 col-sm-6 col-lg-3">
+                        <div class="pricingTable blue h-100">
+                            <div class="pricingTable-header">
+                                <i class="fa fa-adjust"></i>
+                                <div class="price-value">₹ 7999.00<span class="month">per month</span> </div>
+                            </div>
+                            <h3 class="heading">Premium Gold</h3>
+                            <div class="pricing-content">
+                                <ul>
+                                    <li><b>All 10</b> Programs Accessible</li>
+                                    <li><b>6 Month</b> Package Duration</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 7 -->
+                    <div class="col-md-6 col-sm-6 col-lg-3">
+                        <div class="pricingTable green h-100">
+                            <div class="pricingTable-header">
+                                <i class="fa fa-adjust"></i>
+                                <div class="price-value">₹ 7099.00<span class="month">per month</span> </div>
+                            </div>
+                            <h3 class="heading">Elite Bronze</h3>
+                            <div class="pricing-content">
+                                <ul>
+                                    <li><b>3</b> Programs Accessible</li>
+                                    <li><b>1 Year</b> Package Duration</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 8 -->
+                    <div class="col-md-6 col-sm-6 col-lg-3">
+                        <div class="pricingTable h-100">
+                            <div class="pricingTable-header">
+                                <i class="fa fa-adjust"></i>
+                                <div class="price-value">₹ 8199.00<span class="month">per month</span> </div>
+                            </div>
+                            <h3 class="heading">Elite Silver</h3>
+                            <div class="pricing-content">
+                                <ul>
+                                    <li><b>5</b> Programs Accessible</li>
+                                    <li><b>1 Year</b> Package Duration</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-3"></div>
+                    <!-- card 9 -->
+                    <div class="col-md-6 col-sm-6 col-lg-3">
+                        <div class="pricingTable h-100">
+                            <div class="pricingTable-header">
+                                <i class="fa fa-adjust"></i>
+                                <div class="price-value">₹ 9999.00<span class="month">per month</span> </div>
+                            </div>
+                            <h3 class="heading">Elite Gold</h3>
+                            <div class="pricing-content">
+                                <ul>
+                                    <li><b>All 10</b> Programs Accessible</li>
+                                    <li><b>1 Year</b> Package Duration</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 10 -->
+                    <div class="col-md-6 col-sm-6 col-lg-3">
+                        <div class="pricingTable red h-100">
+                            <div class="pricingTable-header">
+                                <i class="fa fa-adjust"></i>
+                                <div class="price-value">₹ 16999.00<span class="month">per month</span> </div>
+                            </div>
+                            <h3 class="heading">Elite Platinum</h3>
+                            <div class="pricing-content">
+                                <ul>
+                                    <li><b>All 10</b> Programs Accessible</li>
+                                    <li><b>2 Year</b> Package Duration</li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark p-2 text-center">
+        <div class="container">
+            <!-- inside container first row  -->
+            <div class="row">
+                <!-- first col -->
+                <div class="col-lg-4 col-md-4 col-12 mt-2 p-3" style="color: white;text-align: left;">
+                    <h4>Locate Us</h4>
+                    <p style="color: white;">
+                        We are located right in the South Point Mall 3rd Floor Spread over 2500 Sqft,
+                        It is one of the most famous malls of Kolkata and it is very well connected.
+                    </p>
+                </div>
+                <!-- end -->
+                <div class="col-lg-4 col-md-4 col-12 mt-2 p-3" style="color: white;text-align: left;">
+                    <div class="widget no-box">
+                        <h5 class="widget-title">Quick Links<span></span></h5>
+                        <ul class="thumbnail-widget">
+                            <li>
+                                <div class="thumb-content"><a href="../index.html">Home</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a href="../html/about.html">About</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a href="../html/programs.html">Program</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a href="../html/ourteam.html">Our Team</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a href="../html/contract.html">Contact</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- secound col -->
+                <div class="col-lg-4 col-md-4 col-12 mt-2 p-3" style="color: white;text-align: left;">
+                    <h4>Address</h4>
+                    <p style="color: white;">
+                        📍 UNIT 303-301, 3RD FLOOR, SOUTH POINT MALL, SECTOR 23, PHASE -7, KOLKATA-700068
+                    </p>
+                </div>
+                <!-- end -->
+                <!-- third col -->
+                <div class="col-lg-4 col-md-4 col-12 mt-2 p-3" style="color: white; text-align: left;">
+                    <h4>Contact Us</h4>
+                    <span>Phone Number :</span> 9732245536 <br>
+                    8976300261
+                    (6A.M - 10P.M, Any Day)<br>
+                    <!--span-->Email:
+                    <!--/span--> hie@phoenixfitnessclub.com
+                </div>
+                <!-- end -->
+            </div>
+            <!-- end of row -->
+
+            <hr style="color:white;">
+
+            <!-- secound row inside the container -->
+            <div class="row">
+                <!-- first col -->
+                <div class="col-6">
+                    <p class="text-white"> Copyright © 2022</p>
+                </div>
+                <!-- end -->
+                <!-- secound col -->
+                <div class="col-6">
+                    <p class="text-white"> Powered by PHOENIX FITNES</p>
+
+                </div>
+                <!-- end -->
+            </div>
+            <!-- secound row end -->
+        </div>
+        <!-- end container -->
+    </footer>
+    <!-- footer ends -->
+    <!-- All Js -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+
+
+    <script type='text/javascript' src=''></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script type='text/javascript'
+        src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+    <script type='text/javascript'></script>
+</body>
+
+</html>
